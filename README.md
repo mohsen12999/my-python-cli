@@ -2,6 +2,17 @@
 
 a simple python cli (command line interface) for helping to make python project and other stuff.
 
+## test cli
+
+- clone github repo on your machine
+
+```sh
+git clone https://github.com/mohsen12999/my-python-cli.git 
+```
+
+- `python -m mypy -v`: to show app version.
+- `python -m mypy --help`: to show application help.
+
 ## Idea
 
 - `mypy new`: ask me a type of project from list.
