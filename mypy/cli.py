@@ -82,5 +82,5 @@ def install():
 @app.command("gi")
 @app.command("gitignore")
 def gitignore():
-    """add gitignore to project"""
+    """add gitignore to project from github"""
     os.system("curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore")
