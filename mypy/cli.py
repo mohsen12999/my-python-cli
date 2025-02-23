@@ -66,11 +66,11 @@ def rq():
 @app.command()
 def env():
     """add and active virtual env"""
-    os.system("python -m venv myenv")
+    os.system("python -m venv venv")
     if os.name == "nt":
-        os.system("myenv\\Scripts\\activate")
+        os.system("venv\\Scripts\\activate")
     else:
-        os.system("source myenv/bin/activate")
+        os.system("source venv/bin/activate")
     
     typer.echo("Virtual environment activated.")
 
