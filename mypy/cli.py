@@ -61,6 +61,7 @@ def new(project_type: str = typer.Argument(None, help="choose a project type")) 
 def rq():
     """make requirement file"""
     os.system("pip freeze > requirements.txt")
+    typer.echo("Requirement file created.")
 
 @app.command()
 def env():
@@ -71,16 +72,18 @@ def env():
     else:
         os.system("source myenv/bin/activate")
     
-    typer.echo("Virtual environment activated")
+    typer.echo("Virtual environment activated.")
 
 @app.command("i")
 @app.command("install")
 def install():
     """install dependency"""
     os.system("pip install -r requirements.txt")
+    typer.echo("Dependencies installed.")
 
 @app.command("gi")
 @app.command("gitignore")
 def gitignore():
     """add gitignore to project from github"""
     os.system("curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore")
+    typer.echo(".gitignore file created from github template.")
