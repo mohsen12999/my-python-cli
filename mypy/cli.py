@@ -72,3 +72,15 @@ def env():
         os.system("source myenv/bin/activate")
     
     typer.echo("Virtual environment activated")
+
+@app.command("i")
+@app.command("install")
+def install():
+    """install dependency"""
+    os.system("pip install -r requirements.txt")
+
+@app.command("gi")
+@app.command("gitignore")
+def gitignore():
+    """add gitignore to project"""
+    os.system("curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore")

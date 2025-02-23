@@ -13,13 +13,14 @@ git clone https://github.com/mohsen12999/my-python-cli.git
 - `mypy -v` or `python -m mypy -v`: to show app version.
 - `mypy --help`: to show application help.
 - `mypy new`: a type of project from list.
-- `mypy req`:  make requirement file.
 - `mypy env`: add and active virtual env.
+- `mypy req`:  make requirement file.
+- `mypy i` or `mypy install`: install dependency.
+- `mypy gi` or `mypy gitignore`: add gitignore to project.
 
 ## Idea
 
-- `mypy i`: install dependency.
-- `mypy gi`: add gitignore to project.
+- nothing left to do.
 
 ## References
 
