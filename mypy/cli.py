@@ -56,6 +56,8 @@ def new(project_type: str = typer.Argument(None, help="choose a project type")) 
     our_command = options[project_type].replace("my_project", project_name)
 
     os.system(our_command)
+    typer.echo("Project created.")
+
 
 @app.command()
 def rq():

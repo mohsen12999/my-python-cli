@@ -1,4 +1,5 @@
 from typer.testing import CliRunner
+import questionary
 
 from mypy import __app_name__, __version__, cli
 
@@ -9,10 +10,17 @@ def test_version():
     assert result.exit_code == 0
     assert f"{__app_name__} v{__version__}\n" in result.stdout
 
-def test_new():
-    result = runner.invoke(cli.app, ["new Basic"])
+def test_new(mocker):
+    # Mock user input from questionary
+    mocker.patch.object(questionary, "select", return_value=mocker.Mock(ask=lambda: "Basic"))
+    mocker.patch.object(questionary, "text", return_value=mocker.Mock(ask=lambda: "my_project"))
+
+    # Run the CLI command
+    result = runner.invoke(cli.app, ["new"])
+
+    # Assert that the command executed successfully
     assert result.exit_code == 0
-    assert "Basic" in result.stdout
+    assert "Project created." in result.stdout
 
 
 def test_rq():
