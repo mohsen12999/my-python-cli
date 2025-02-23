@@ -10,16 +10,16 @@ a simple python cli (command line interface) for helping to make python project 
 git clone https://github.com/mohsen12999/my-python-cli.git 
 ```
 
-- `python -m mypy -v`: to show app version.
-- `python -m mypy --help`: to show application help.
+- `mypy -v` or `python -m mypy -v`: to show app version.
+- `mypy --help`: to show application help.
+- `mypy new`: a type of project from list.
+- `mypy req`:  make requirement file.
+- `mypy env`: add and active virtual env.
 
 ## Idea
 
-- `mypy new`: ask me a type of project from list.
-- `mypy erq`:  make requirement file.
 - `mypy i`: install dependency.
 - `mypy gi`: add gitignore to project.
-- `mypy ve`: add and active virtual env.
 
 ## References
 

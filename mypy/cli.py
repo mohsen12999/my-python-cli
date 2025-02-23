@@ -57,3 +57,18 @@ def new(project_type: str = typer.Argument(None, help="choose a project type")) 
 
     os.system(our_command)
 
+@app.command()
+def rq():
+    """make requirement file"""
+    os.system("pip freeze > requirements.txt")
+
+@app.command()
+def env():
+    """add and active virtual env"""
+    os.system("python -m venv myenv")
+    if os.name == "nt":
+        os.system("myenv\\Scripts\\activate")
+    else:
+        os.system("source myenv/bin/activate")
+    
+    typer.echo("Virtual environment activated")
