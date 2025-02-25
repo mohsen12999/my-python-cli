@@ -7,7 +7,11 @@ authors = [
     { name = "mohsen1299@gmail.com", email = "mohsen1299@gmail.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "pytest>=8.3.4",
+    "questionary>=2.1.0",
+    "typer>=0.15.1",
+]
 
 [project.scripts]
 mpy = "mpy:main"
