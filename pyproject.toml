@@ -1,7 +1,7 @@
 [project]
 name = "mpy"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple python cli"
 readme = "README.md"
 authors = [
     { name = "mohsen1299@gmail.com", email = "mohsen1299@gmail.com" }
