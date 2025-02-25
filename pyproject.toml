@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mpy = "mpy:main"
+mpy = "mpy.__main__:main"
 
 [build-system]
 requires = ["hatchling"]
