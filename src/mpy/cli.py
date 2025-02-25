@@ -26,6 +26,7 @@ def main(
         is_eager=True,
     )
 ) -> None:
+    """MPY: A simple Python CLI tool."""
     return
 
 @app.command()
