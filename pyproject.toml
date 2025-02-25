@@ -1,0 +1,17 @@
+[project]
+name = "mpy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "mohsen1299@gmail.com", email = "mohsen1299@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+mpy = "mpy:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
