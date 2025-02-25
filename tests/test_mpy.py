@@ -1,7 +1,7 @@
 from typer.testing import CliRunner
 import questionary
 
-from mypy import __app_name__, __version__, cli
+from mpy import __app_name__, __version__, cli
 
 runner = CliRunner()
 

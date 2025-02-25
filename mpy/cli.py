@@ -6,7 +6,7 @@ import os
 import typer
 import questionary
 
-from mypy import __app_name__, __version__
+from mpy import __app_name__, __version__
 
 app = typer.Typer()
 
