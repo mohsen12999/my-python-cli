@@ -1,0 +1,26 @@
+[project]
+name = "mpy"
+version = "0.1.0"
+description = "A simple python cli"
+readme = "README.md"
+authors = [
+    { name = "mohsen1299@gmail.com", email = "mohsen1299@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "questionary>=2.1.0",
+    "typer>=0.15.1",
+]
+
+[project.scripts]
+mpy = "mpy.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+]

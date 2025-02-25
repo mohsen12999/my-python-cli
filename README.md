@@ -2,13 +2,15 @@
 
 a simple python cli (command line interface) for helping to make python project and other stuff.
 
-## test cli
+## Use cli
 
 - clone github repo on your machine
 
 ```sh
 git clone https://github.com/mohsen12999/my-python-cli.git 
 ```
+
+- install app: `uv tool install . -e`
 
 - `mpy -v` or `python -m mpy -v`: to show app version.
 - `mpy --help`: to show application help.
@@ -18,9 +20,15 @@ git clone https://github.com/mohsen12999/my-python-cli.git
 - `mpy i` or `mpy install`: install dependency.
 - `mpy gi` or `mpy gitignore`: add gitignore to project.
 
-## Idea
+<<<<<<< HEAD
+
+## Todo Ideas
 
 - nothing left to do.
+
+## commands
+
+- make project with `uv init --app --package mpy`
 
 ## References
 
