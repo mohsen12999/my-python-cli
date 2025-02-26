@@ -34,7 +34,7 @@ def new(project_type: str = typer.Argument(None, help="choose a project type")) 
     """choose a project type"""
 
     options = {
-        "Basic": "mkdir my_project && cd my_project && echo 'print(\"Hello, World!\")' > main.py",
+        "Basic": """mkdir my_project && cd my_project && echo print("Hello, World!") > main.py""",
         "Django": "pip install django && django-admin startproject my_project",
         "Flask": "pip install Flask && mkdir my_project && cd my_project && echo 'from flask import Flask\napp = Flask(__name__)\n@app.route('/')\ndef hello_world():\n\treturn 'Hello, World!'\nif __name__ == '__main__':\n\tapp.run(debug=True)'\nif __name__ == '__main__':\n\tapp.run(debug=True)' > app.py",
         "FastAPI": """pip install fastapi uvicorn && mkdir my_project && cd my_project && echo "from fastapi import FastAPI\nimport uvicorn\napp = FastAPI()\n@app.get('/')\ndef read_root():\n\treturn {'message': 'Hello, World!'}\nif __name__ == '__main__':\n\tuvicorn.run(app, host='0.0.0.0', port=8000)" > main.py""",

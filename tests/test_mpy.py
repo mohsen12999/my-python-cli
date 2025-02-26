@@ -13,7 +13,7 @@ def test_version():
 def test_new(mocker):
     # Mock user input from questionary
     mocker.patch.object(questionary, "select", return_value=mocker.Mock(ask=lambda: "Basic"))
-    mocker.patch.object(questionary, "text", return_value=mocker.Mock(ask=lambda: "my_project"))
+    mocker.patch.object(questionary, "text", return_value=mocker.Mock(ask=lambda: "test_baseic_project"))
 
     # Run the CLI command
     result = runner.invoke(cli.app, ["new"])
