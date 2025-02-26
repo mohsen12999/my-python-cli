@@ -20,8 +20,6 @@ git clone https://github.com/mohsen12999/my-python-cli.git
 - `mpy i` or `mpy install`: install dependency.
 - `mpy gi` or `mpy gitignore`: add gitignore to project.
 
-<<<<<<< HEAD
-
 ## Todo Ideas
 
 - nothing left to do.
@@ -29,6 +27,7 @@ git clone https://github.com/mohsen12999/my-python-cli.git
 ## commands
 
 - make project with `uv init --app --package mpy`
+- testing app with `uv run pytest`
 
 ## References
 
